@@ -10,22 +10,18 @@
 
 	<name>agenda</name>
 
-
 	<scm>
 	    <connection>scm:git:https://github.com/steppat/agenda</connection>
 	    <developerConnection>scm:git:https://github.com/steppat/agenda</developerConnection>
 	    <url>https://github.com/steppat/agenda</url>
 	</scm>
 
-
 	<dependencies>
-	
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>3.6.8.Final</version>
 		</dependency>
-            
 	</dependencies>
 
 	<build>
@@ -33,14 +29,11 @@
 		<defaultGoal>war:war</defaultGoal>
 		<plugins>
 
-
-
-
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.6</source>
+					<target>1.6</target>
 				</configuration>
 			</plugin>
 

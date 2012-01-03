@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="log.xsl"?>
+
+<build time="2 seconds">
+	<message priority="debug"><![CDATA[Adding reference: ant.PropertyHelper]]></message>
+	<message priority="debug"><![CDATA[Detected Java version: 1.6 in: /usr/lib/jvm/java-6-sun-1.6.0.26/jre]]></message>
+	<message priority="debug"><![CDATA[Detected OS: Linux]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.ComponentHelper]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file -> /files/workspaces/workspace-ant/curso-online/agenda/build.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.type -> file]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.projectHelper]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.parsing.context]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.targets]]></message>
+	<message priority="debug"><![CDATA[parsing buildfile /files/workspaces/workspace-ant/curso-online/agenda/build.xml with URI = file:/files/workspaces/workspace-ant/curso-online/agenda/build.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.name -> agenda]]></message>
+	<message priority="debug"><![CDATA[Adding reference: agenda]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.default-target -> empacotar]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.agenda -> /files/workspaces/workspace-ant/curso-online/agenda/build.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.type.agenda -> file]]></message>
+	<message priority="debug"><![CDATA[Project base dir set to: /files/workspaces/workspace-ant/curso-online/agenda]]></message>
+	<message priority="debug"><![CDATA[ +Target: ]]></message>
+	<message priority="debug"><![CDATA[ +Target: init]]></message>
+	<message priority="debug"><![CDATA[ +Target: limpar]]></message>
+	<message priority="debug"><![CDATA[ +Target: copiar-recursos]]></message>
+	<message priority="debug"><![CDATA[ +Target: compilar]]></message>
+	<message priority="debug"><![CDATA[ +Target: compilar-testes]]></message>
+	<message priority="debug"><![CDATA[ +Target: executar-testes]]></message>
+	<message priority="debug"><![CDATA[ +Target: copiar-recursos-testes]]></message>
+	<message priority="debug"><![CDATA[ +Target: empacotar]]></message>
+	<message priority="debug"><![CDATA[ +Target: deploy-local]]></message>
+	<message priority="debug"><![CDATA[ +Target: rodar-tomcat-local]]></message>
+	<message priority="debug"><![CDATA[ +Target: parar-tomcat-local]]></message>
+	<message priority="debug"><![CDATA[ +Target: touch-war-no-servidor]]></message>
+	<message priority="debug"><![CDATA[ +Target: deploy-remote]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.LocalProperties]]></message>
+	<message priority="debug"><![CDATA[parsing buildfile jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file]]></message>
+	<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:3: " name="description" time="0 seconds" />
+	<message priority="debug"><![CDATA[Setting project property: tomcat.home -> /files/appservers/apache-tomcat-6.0.32]]></message>
+	<message priority="debug"><![CDATA[Setting project property: application.name -> agenda]]></message>
+	<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:5: " name="property" time="0 seconds">
+		<message priority="debug"><![CDATA[Loading /files/workspaces/workspace-ant/curso-online/agenda/build.properties]]></message>
+	</task>
+	<message priority="debug"><![CDATA[Setting project property: build.dir -> build]]></message>
+	<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:6: " name="property" time="0 seconds" />
+	<message priority="debug"><![CDATA[Adding reference: libs.classpath]]></message>
+	<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:8: " name="path" time="0 seconds" />
+	<message priority="debug"><![CDATA[Adding reference: project.classpath]]></message>
+	<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:14: " name="path" time="0 seconds" />
+	<message priority="debug"><![CDATA[Adding reference: teste.classpath]]></message>
+	<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:19: " name="path" time="0 seconds" />
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.invoked-targets -> empacotar]]></message>
+	<message priority="debug"><![CDATA[Attempting to create object of type org.apache.tools.ant.helper.DefaultExecutor]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.executor]]></message>
+	<message priority="debug"><![CDATA[Build sequence for target(s) `empacotar' is [init, copiar-recursos, compilar, compilar-testes, executar-testes, copiar-recursos-testes, empacotar]]]></message>
+	<message priority="debug"><![CDATA[Complete build sequence is [init, copiar-recursos, compilar, compilar-testes, executar-testes, copiar-recursos-testes, empacotar, touch-war-no-servidor, deploy-local, limpar, parar-tomcat-local, deploy-remote, rodar-tomcat-local, ]]]></message>
+	<target name="init" time="0 seconds">
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:28: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping /files/workspaces/workspace-ant/curso-online/agenda/build because it already exists.]]></message>
+		</task>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:29: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping /files/workspaces/workspace-ant/curso-online/agenda/build/classes because it already exists.]]></message>
+		</task>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:30: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping /files/workspaces/workspace-ant/curso-online/agenda/build/classes-teste because it already exists.]]></message>
+		</task>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:31: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping /files/workspaces/workspace-ant/curso-online/agenda/build/relatorio-teste because it already exists.]]></message>
+		</task>
+	</target>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/src with patternSet{ includes: [hibernate.cfg.xml, log4j.xml] excludes: [] }]]></message>
+	<target name="copiar-recursos" time="0 seconds">
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:39: " name="echo" time="0 seconds">
+			<message priority="warn"><![CDATA[Compiando recursos]]></message>
+		</task>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:40: " name="copy" time="0 seconds">
+			<message priority="debug"><![CDATA[hibernate.cfg.xml omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/classes/hibernate.cfg.xml is up to date.]]></message>
+			<message priority="debug"><![CDATA[log4j.xml omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/classes/log4j.xml is up to date.]]></message>
+			<message priority="debug"><![CDATA[No sources found.]]></message>
+		</task>
+	</target>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/src with patternSet{ includes: [] excludes: [] }]]></message>
+	<target name="compilar" time="0 seconds">
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:49: " name="echo" time="0 seconds">
+			<message priority="warn"><![CDATA[Compilando o projeto]]></message>
+		</task>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:50: " name="javac" time="0 seconds">
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/Contato.java omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/classes/br/com/caelum/vraptor/Contato.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/controller/ContatosController.java omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/classes/br/com/caelum/vraptor/controller/ContatosController.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/controller/IndexController.java omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/classes/br/com/caelum/vraptor/controller/IndexController.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/dao/ContatoDao.java omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/classes/br/com/caelum/vraptor/dao/ContatoDao.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[/files/workspaces/workspace-ant/curso-online/agenda/src/hibernate.cfg.xml skipped - don't know how to handle it]]></message>
+			<message priority="debug"><![CDATA[/files/workspaces/workspace-ant/curso-online/agenda/src/log4j.xml skipped - don't know how to handle it]]></message>
+		</task>
+	</target>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/src-teste with patternSet{ includes: [] excludes: [] }]]></message>
+	<target name="compilar-testes" time="0 seconds">
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:56: " name="echo" time="0 seconds">
+			<message priority="warn"><![CDATA[Compilando classes de teste]]></message>
+		</task>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:57: " name="javac" time="0 seconds">
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/controller/ContatosControllerTest.java omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/classes-teste/br/com/caelum/vraptor/controller/ContatosControllerTest.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[/files/workspaces/workspace-ant/curso-online/agenda/src-teste/hibernate.cfg.xml skipped - don't know how to handle it]]></message>
+			<message priority="debug"><![CDATA[/files/workspaces/workspace-ant/curso-online/agenda/src-teste/log4j.xml skipped - don't know how to handle it]]></message>
+		</task>
+	</target>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib with patternSet{ includes: [*.jar] excludes: [] }]]></message>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/lib-teste with patternSet{ includes: [*.jar] excludes: [] }]]></message>
+	<message priority="debug"><![CDATA[Finding class junit.framework.Test]]></message>
+	<message priority="debug"><![CDATA[Loaded from /files/workspaces/workspace-ant/curso-online/agenda/lib-teste/junit-4.10.jar junit/framework/Test.class]]></message>
+	<message priority="debug"><![CDATA[Class java.lang.Object loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class junit.framework.Test loaded from ant loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirrorImpl]]></message>
+	<message priority="debug"><![CDATA[Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirrorImpl.class]]></message>
+	<message priority="debug"><![CDATA[Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class java.lang.Throwable loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Finding class junit.framework.AssertionFailedError]]></message>
+	<message priority="debug"><![CDATA[Loaded from /files/workspaces/workspace-ant/curso-online/agenda/lib-teste/junit-4.10.jar junit/framework/AssertionFailedError.class]]></message>
+	<message priority="debug"><![CDATA[Class java.lang.AssertionError loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class junit.framework.AssertionFailedError loaded from ant loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$SummaryJUnitResultFormatterMirror loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class java.lang.ClassLoader loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class org.apache.tools.ant.AntClassLoader loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitTestRunnerMirror loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTask loaded from parent loader (parentFirst)]]></message>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/src-teste with patternSet{ includes: [**/*Test.java] excludes: [] }]]></message>
+	<message priority="debug"><![CDATA[Execute:Java13CommandLauncher: Executing '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/bin/java' with arguments:
+'-classpath'
+'/files/workspaces/workspace-ant/curso-online/agenda/build/classes:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/antlr-2.7.7.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/aopalliance.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/aspectjrt.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/cglib-nodep-2.1_3.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/classmate-0.5.4.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/commons-collections-3.2.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/commons-logging.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/dom4j-1.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/guava-r07.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-3.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-core-4.0.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-validator-4.1.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jandex-1.0.3.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/javassist-3.12.1.GA.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/javassist-3.14.0.GA.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jboss-logging-3.1.0.CR2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jstl-api-1.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jstl-impl-1.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jta-1.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/log4j-1.2.16.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/mirror-1.5.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/objenesis-1.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/ognl-2.7.3.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.aop-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.asm-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.aspects-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.beans-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.context-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.core-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.expression-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.web-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/paranamer-2.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/scannotation-1.0.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/slf4j-api-1.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/slf4j-log4j12-1.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/validation-api-1.0.0.GA.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/vraptor-3.4.0.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/xstream-1.3.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/lib-teste/junit-4.10.jar:/files/workspaces/workspace-ant/curso-online/agenda/lib-teste/junit-dep-4.10.jar:/files/workspaces/workspace-ant/curso-online/agenda/lib-teste/mockito-all-1.9.0.jar:/files/workspaces/workspace-ant/curso-online/agenda/build/classes-teste:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'br.com.caelum.vraptor.controller.ContatosControllerTest'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=true'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter'
+'showoutput=true'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/files/workspaces/workspace-ant/curso-online/agenda/build/relatorio-teste/TEST-br.com.caelum.vraptor.controller.ContatosControllerTest.txt'
+'crashfile=/files/workspaces/workspace-ant/curso-online/agenda/junitvmwatcher6341336744364406115.properties'
+'propsfile=/files/workspaces/workspace-ant/curso-online/agenda/junit8992985032724027109.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.]]></message>
+	<target name="executar-testes" time="1 second">
+		<message priority="debug"><![CDATA[Couldn't find junit/framework/TestCase.class]]></message>
+		<message priority="debug"><![CDATA[Found /usr/share/java/ant-launcher-1.8.2.jar]]></message>
+		<message priority="debug"><![CDATA[Found /usr/share/ant/lib/ant.jar]]></message>
+		<message priority="debug"><![CDATA[Found /usr/share/ant/lib/ant-junit.jar]]></message>
+		<message priority="debug"><![CDATA[Couldn't find org/apache/tools/ant/taskdefs/optional/junit/JUnit4TestMethodAdapter.class]]></message>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:61: " name="junit" time="1 second">
+			<message priority="debug"><![CDATA[Implicitly adding /usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar to CLASSPATH]]></message>
+			<message priority="debug"><![CDATA[Executing '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/bin/java' with arguments:
+'-classpath'
+'/files/workspaces/workspace-ant/curso-online/agenda/build/classes:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/antlr-2.7.7.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/aopalliance.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/aspectjrt.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/cglib-nodep-2.1_3.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/classmate-0.5.4.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/commons-collections-3.2.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/commons-logging.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/dom4j-1.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/guava-r07.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-3.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-core-4.0.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/hibernate-validator-4.1.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jandex-1.0.3.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/javassist-3.12.1.GA.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/javassist-3.14.0.GA.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jboss-logging-3.1.0.CR2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jstl-api-1.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jstl-impl-1.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/jta-1.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/log4j-1.2.16.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/mirror-1.5.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/objenesis-1.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/ognl-2.7.3.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.aop-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.asm-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.aspects-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.beans-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.context-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.core-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.expression-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/org.springframework.web-3.0.5.RELEASE.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/paranamer-2.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/scannotation-1.0.2.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/slf4j-api-1.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/slf4j-log4j12-1.6.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/validation-api-1.0.0.GA.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/vraptor-3.4.0.jar:/files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF/lib/xstream-1.3.1.jar:/files/workspaces/workspace-ant/curso-online/agenda/lib-teste/junit-4.10.jar:/files/workspaces/workspace-ant/curso-online/agenda/lib-teste/junit-dep-4.10.jar:/files/workspaces/workspace-ant/curso-online/agenda/lib-teste/mockito-all-1.9.0.jar:/files/workspaces/workspace-ant/curso-online/agenda/build/classes-teste:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'br.com.caelum.vraptor.controller.ContatosControllerTest'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=true'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter'
+'showoutput=true'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/files/workspaces/workspace-ant/curso-online/agenda/build/relatorio-teste/TEST-br.com.caelum.vraptor.controller.ContatosControllerTest.txt'
+'crashfile=/files/workspaces/workspace-ant/curso-online/agenda/junitvmwatcher6341336744364406115.properties'
+'propsfile=/files/workspaces/workspace-ant/curso-online/agenda/junit8992985032724027109.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.]]></message>
+			<message priority="info"><![CDATA[Running br.com.caelum.vraptor.controller.ContatosControllerTest]]></message>
+			<message priority="info"><![CDATA[23:24:56,996 DEBUG [CglibProxifier      ] a proxy for interface br.com.caelum.vraptor.view.LogicResult is created as class br.com.caelum.vraptor.view.LogicResult$$EnhancerByCGLIB$$69b97007]]></message>
+			<message priority="info"><![CDATA[23:24:57,036 DEBUG [CglibProxifier      ] a proxy for class br.com.caelum.vraptor.controller.ContatosController is created as class br.com.caelum.vraptor.controller.ContatosController$$EnhancerByCGLIB$$3cab5f3e]]></message>
+			<message priority="info"><![CDATA[Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0,619 sec]]></message>
+		</task>
+	</target>
+	<target name="copiar-recursos-testes" time="0 seconds">
+		<message priority="debug"><![CDATA[Skipped because property 'ambiente.teste' not set.]]></message>
+	</target>
+	<message priority="debug"><![CDATA[ZipFileSet: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/WebContent/WEB-INF with patternSet{ includes: [web.xml] excludes: [] }]]></message>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/WebContent with patternSet{ includes: [] excludes: [WEB-INF/classes/] }]]></message>
+	<message priority="debug"><![CDATA[zipfileset: Setup scanner in dir /files/workspaces/workspace-ant/curso-online/agenda/build/classes with patternSet{ includes: [] excludes: [] }]]></message>
+	<target name="empacotar" time="0 seconds">
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:83: " name="echo" time="0 seconds">
+			<message priority="warn"><![CDATA[Criação do WAR]]></message>
+		</task>
+		<task location="/files/workspaces/workspace-ant/curso-online/agenda/build.xml:84: " name="war" time="0 seconds">
+			<message priority="debug"><![CDATA[web.xml omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/web.xml is up to date.]]></message>
+			<message priority="debug"><![CDATA[No sources found.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp/contatos/editar.jsp omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/contatos/editar.jsp is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp/contatos/exibir.jsp omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/contatos/exibir.jsp is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp/contatos/listar.jsp omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/contatos/listar.jsp is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp/contatos/novo.jsp omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/contatos/novo.jsp is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp/index/index.jsp omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/index/index.jsp is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/.jars omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/.jars is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/antlr-2.7.7.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/antlr-2.7.7.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/aopalliance.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/aopalliance.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/aspectjrt.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/aspectjrt.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/cglib-nodep-2.1_3.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/cglib-nodep-2.1_3.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/classmate-0.5.4.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/classmate-0.5.4.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/commons-collections-3.2.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/commons-collections-3.2.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/commons-logging.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/commons-logging.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/dom4j-1.6.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/dom4j-1.6.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/guava-r07.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/guava-r07.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/hibernate-3.6.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/hibernate-3.6.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/hibernate-core-4.0.0.Final.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/hibernate-core-4.0.0.Final.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/hibernate-validator-4.1.0.Final.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/hibernate-validator-4.1.0.Final.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/jandex-1.0.3.Final.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/jandex-1.0.3.Final.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/javassist-3.12.1.GA.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/javassist-3.12.1.GA.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/javassist-3.14.0.GA.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/javassist-3.14.0.GA.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/jboss-logging-3.1.0.CR2.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/jboss-logging-3.1.0.CR2.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/jstl-api-1.2.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/jstl-api-1.2.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/jstl-impl-1.2.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/jstl-impl-1.2.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/jta-1.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/jta-1.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/log4j-1.2.16.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/log4j-1.2.16.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/mirror-1.5.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/mirror-1.5.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/objenesis-1.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/objenesis-1.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/ognl-2.7.3.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/ognl-2.7.3.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.aop-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.aop-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.asm-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.asm-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.aspects-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.aspects-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.beans-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.beans-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.context-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.context-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.core-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.core-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.expression-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.expression-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/org.springframework.web-3.0.5.RELEASE.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/org.springframework.web-3.0.5.RELEASE.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/paranamer-2.2.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/paranamer-2.2.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/scannotation-1.0.2.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/scannotation-1.0.2.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/slf4j-api-1.6.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/slf4j-api-1.6.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/slf4j-log4j12-1.6.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/slf4j-log4j12-1.6.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/validation-api-1.0.0.GA.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/validation-api-1.0.0.GA.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/vraptor-3.4.0.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/vraptor-3.4.0.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib/xstream-1.3.1.jar omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/xstream-1.3.1.jar is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/web.xml omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/web.xml is up to date.]]></message>
+			<message priority="debug"><![CDATA[index.html omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:index.html is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp/contatos omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/contatos/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/jsp/index omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/jsp/index/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[WEB-INF/lib omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/lib/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/Contato.class omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/vraptor/Contato.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/controller/ContatosController.class omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/vraptor/controller/ContatosController.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/controller/IndexController.class omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/vraptor/controller/IndexController.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/dao/ContatoDao.class omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/vraptor/dao/ContatoDao.class is up to date.]]></message>
+			<message priority="debug"><![CDATA[hibernate.cfg.xml omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/hibernate.cfg.xml is up to date.]]></message>
+			<message priority="debug"><![CDATA[log4j.xml omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/log4j.xml is up to date.]]></message>
+			<message priority="debug"><![CDATA[ omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[br omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/vraptor/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/controller omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/vraptor/controller/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[br/com/caelum/vraptor/dao omitted as /files/workspaces/workspace-ant/curso-online/agenda/build/agenda.war:WEB-INF/classes/br/com/caelum/vraptor/dao/ is up to date.]]></message>
+			<message priority="debug"><![CDATA[No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: /files/workspaces/workspace-ant/curso-online/agenda/build.xml:84: ]]></message>
+		</task>
+	</target>
+</build>
